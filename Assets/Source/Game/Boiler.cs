@@ -6,6 +6,7 @@ public class Boiler : MonoBehaviour
 {
     [SerializeField] private GameObject[] ingridients;
     
+    
     // Start is called before the first frame update
     void Start()
     {

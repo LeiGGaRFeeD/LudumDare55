@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
@@ -13,66 +14,81 @@ public class Game : MonoBehaviour
         
     }
     
+    
+    //States
+    //0 - closed
+    //1 - opened 
+    //2 - Mini-game opening
     public void CheckCook() //Check if ingridients are right
     {
         if (_name == "sparklescrystalslurry" || _name == "sparklesslurrycrystal" || _name == "crystalsparklesslurry" || _name == "crystalslurrysparkles" || _name == "slurrysparklescrystal" || _name == "slurrycrystalslurry" )
         {
-            PlayerPrefs.SetInt("Slimeman",1);
+            PlayerPrefs.SetInt("Slimeman",2);
             Debug.Log("Turtle opened");
+            SceneManager.LoadScene("MiniGame");
         }
         
         if (_name == "sparklescrystalfire" || _name == "sparklesfirecrystal" || _name == "firecrystalsparkles" || _name == "firesparklescrystal" || _name == "crystalfiresparkles" || _name == "crystalfiresparkles" )
         {
-            PlayerPrefs.SetInt("Turtle",1);
+            PlayerPrefs.SetInt("Turtle",2);
             Debug.Log("Turtle opened");
+            SceneManager.LoadScene("MiniGame");
         }
         
         if (_name == "sparklescrystalfur" || _name == "sparklesfurcrystal" || _name == "fursparklescrystal" || _name == "furcrystalsparkles" || _name == "crystalfursparkles" || _name == "crystalsparklesfur" )
         {
-            PlayerPrefs.SetInt("Spider",1);
+            PlayerPrefs.SetInt("Spider",2);
             Debug.Log("Spider opened");
+            SceneManager.LoadScene("MiniGame");
         }
         
         if (_name == "crystalfurslurry" || _name == "crystalslurryfur" || _name == "furcrystalslurry" || _name == "furslurrycrystal" || _name == "slurrycrystalfur" || _name == "slurryfurcrystal" )
         {
-            PlayerPrefs.SetInt("BoboCat",1);
+            PlayerPrefs.SetInt("BoboCat",2);
             Debug.Log("BoboCat opened");
+            SceneManager.LoadScene("MiniGame");
         }
         
         if (_name == "sparklesfurslurry" || _name == "sparklesslurryfur" || _name == "fursparklesslurry" || _name == "furslurrysparkles" || _name == "slurrysparklesfur" || _name == "slurryfursparkles" )
         {
-            PlayerPrefs.SetInt("OsmoCat",1);
+            PlayerPrefs.SetInt("OsmoCat",2);
             Debug.Log("OsmoCat opened");
+            SceneManager.LoadScene("MiniGame");
         }
         
         if (_name == "sparklesfurfire" || _name == "sparklesfirefur" || _name == "firesparklesfur" || _name == "firefursparkles" || _name == "furfiresparkles" || _name == "fursparklesfire" )
         {
-            PlayerPrefs.SetInt("NightLamp",1);
+            PlayerPrefs.SetInt("NightLamp",2);
             Debug.Log("Nightlamp opened");
+            SceneManager.LoadScene("MiniGame");
         }
         
         if (_name == "crystalfurfire" || _name == "crystalfirefur" || _name == "firefurcrystal" || _name == "firecrystalfur" || _name == "furcrystalfire" || _name == "furfirecrystal" )
         {
-            PlayerPrefs.SetInt("Fox",1);
+            PlayerPrefs.SetInt("Fox",2);
             Debug.Log("fox opened");
+            SceneManager.LoadScene("MiniGame");
         }
         
         if (_name == "sparklesslurryfire" || _name == "sparklesfireslurry" || _name == "fireslurrysparkles" || _name == "firesparklesslurry" || _name == "slurryfiresparkles" || _name == "slurrysparklesfire" )
         {
-            PlayerPrefs.SetInt("Jellyfish",1);
+            PlayerPrefs.SetInt("Jellyfish",2);
             Debug.Log("OsmoCat opened");
+            SceneManager.LoadScene("MiniGame");
         }
         
         if (_name == "firecrystalslurry" || _name == "firesslurrycrystal" || _name == "crystalfireslurry" || _name == "crystalslurryfire" || _name == "slurryfirecrystal" || _name == "slurrycrystalfire" )
         {
-            PlayerPrefs.SetInt("Dragon",1);
+            PlayerPrefs.SetInt("Dragon",2);
             Debug.Log("Dragon opened");
+            SceneManager.LoadScene("MiniGame");
         }
         
         if (_name == "furslurryfire" || _name == "furfireslurry" || _name == "fireslurryfur" || _name == "firefurslurry" || _name == "slurryfirefur" || _name == "slurryfurfire" )
         {
-            PlayerPrefs.SetInt("Garpy",1);
+            PlayerPrefs.SetInt("Garpy",2);
             Debug.Log("Garpy opened");
+            SceneManager.LoadScene("MiniGame");
         }
 
 

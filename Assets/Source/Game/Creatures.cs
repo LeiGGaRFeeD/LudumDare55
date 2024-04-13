@@ -5,6 +5,7 @@ using UnityEngine;
 public class Creatures : MonoBehaviour
 {
     [SerializeField] private GameObject[] creature;
+    [SerializeField] private GameObject[] creatureText;
     
     // Start is called before the first frame update
     void Start()
