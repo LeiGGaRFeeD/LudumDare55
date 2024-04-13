@@ -2774,6 +2774,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1913434476}
   - component: {fileID: 1913434477}
+  - component: {fileID: 1913434478}
+  - component: {fileID: 1913434479}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -2809,6 +2811,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
+--- !u!114 &1913434478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913434475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd4bb6c3ea164f75a2809054971f543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creature:
+  - {fileID: 1874224925}
+  - {fileID: 1201687749}
+  - {fileID: 566839236}
+  - {fileID: 304145232}
+  - {fileID: 269944097}
+  - {fileID: 344870952}
+  - {fileID: 1874566188}
+  - {fileID: 1681707314}
+  - {fileID: 1523309266}
+  - {fileID: 1345679228}
+--- !u!114 &1913434479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913434475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70dbe4d9b686448048de8f884d3ce931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _debugIsOn: 1
 --- !u!1 &1965907144
 GameObject:
   m_ObjectHideFlags: 0

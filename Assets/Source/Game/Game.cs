@@ -15,10 +15,10 @@ public class Game : MonoBehaviour
     
     public void CheckCook() //Check if ingridients are right
     {
-        if (_name == "firecrystalslurry" || _name == "fireslurrycrystal" || _name == "crystalfireslurry" || _name == "crystalslurryfire" || _name == "slurryfirecrystal" || _name == "slurrycrystalfire" )
+        if (_name == "sparklescrystalslurry" || _name == "sparklesslurrycrystal" || _name == "crystalsparklesslurry" || _name == "crystalslurrysparkles" || _name == "slurrysparklescrystal" || _name == "slurrycrystalslurry" )
         {
             PlayerPrefs.SetInt("Slimeman",1);
-            Debug.Log("Slimeman opened");
+            Debug.Log("Turtle opened");
         }
         
         if (_name == "sparklescrystalfire" || _name == "sparklesfirecrystal" || _name == "firecrystalsparkles" || _name == "firesparklescrystal" || _name == "crystalfiresparkles" || _name == "crystalfiresparkles" )
@@ -45,6 +45,40 @@ public class Game : MonoBehaviour
             Debug.Log("OsmoCat opened");
         }
         
+        if (_name == "sparklesfurfire" || _name == "sparklesfirefur" || _name == "firesparklesfur" || _name == "firefursparkles" || _name == "furfiresparkles" || _name == "fursparklesfire" )
+        {
+            PlayerPrefs.SetInt("NightLamp",1);
+            Debug.Log("Nightlamp opened");
+        }
+        
+        if (_name == "crystalfurfire" || _name == "crystalfirefur" || _name == "firefurcrystal" || _name == "firecrystalfur" || _name == "furcrystalfire" || _name == "furfirecrystal" )
+        {
+            PlayerPrefs.SetInt("Fox",1);
+            Debug.Log("fox opened");
+        }
+        
+        if (_name == "sparklesslurryfire" || _name == "sparklesfireslurry" || _name == "fireslurrysparkles" || _name == "firesparklesslurry" || _name == "slurryfiresparkles" || _name == "slurrysparklesfire" )
+        {
+            PlayerPrefs.SetInt("Jellyfish",1);
+            Debug.Log("OsmoCat opened");
+        }
+        
+        if (_name == "firecrystalslurry" || _name == "firesslurrycrystal" || _name == "crystalfireslurry" || _name == "crystalslurryfire" || _name == "slurryfirecrystal" || _name == "slurrycrystalfire" )
+        {
+            PlayerPrefs.SetInt("Dragon",1);
+            Debug.Log("Dragon opened");
+        }
+        
+        if (_name == "furslurryfire" || _name == "furfireslurry" || _name == "fireslurryfur" || _name == "firefurslurry" || _name == "slurryfirefur" || _name == "slurryfurfire" )
+        {
+            PlayerPrefs.SetInt("Garpy",1);
+            Debug.Log("Garpy opened");
+        }
+
+
+        _name = "";
+        PlayerPrefs.SetInt("CookClicked",1);
+
     }
     
     
