@@ -30,6 +30,12 @@ public class SceneHelper : MonoBehaviour
     {
         SceneManager.LoadScene("Autores");
     }
+
+    public void quitFromGame()
+    {
+        Debug.Log(("quit from application"));
+        Application.Quit();
+    }
     // Update is called once per frame
     void Update()
     {
