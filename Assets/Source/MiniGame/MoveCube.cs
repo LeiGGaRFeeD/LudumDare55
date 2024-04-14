@@ -8,12 +8,23 @@ public class MoveCube : MonoBehaviour
     public Transform pointB; // Вторая точка
     public float speed = 5.0f; // Скорость перемещения
 
+    [Header("Random settings")] [SerializeField]
+    private bool _randomIsActivated;
+    [SerializeField] private float min;
+    [SerializeField] private float max;
+    
+
     private Transform target; // Текущая целевая точка
 
     void Start()
     {
         // Начинаем движение к точке A
         target = pointA;
+        if ( _randomIsActivated == true)
+        {
+            speed = Random.RandomRange(min, max);
+            
+        }
     }
 
     void Update()

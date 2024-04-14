@@ -237,6 +237,9 @@ MonoBehaviour:
   pointA: {fileID: 723364545}
   pointB: {fileID: 1306549622}
   speed: 5
+  _randomIsActivated: 1
+  min: 10
+  max: 50
 --- !u!212 &252031142
 SpriteRenderer:
   m_ObjectHideFlags: 0
