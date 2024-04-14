@@ -22,6 +22,10 @@ public class Game : MonoBehaviour
     //2 - Mini-game opening
     public void CheckCook() //Check if ingridients are right
     {
+        if (_name.Contains("sparkles") && _name.Contains("crystal") && _name.Contains("slurry"))
+        {
+            
+        }
         if (_name == "sparklescrystalslurry" || _name == "sparklesslurrycrystal" || _name == "crystalsparklesslurry" || _name == "crystalslurrysparkles" || _name == "slurrysparklescrystal" || _name == "slurrycrystalslurry" )
         {
             PlayerPrefs.SetInt("Slimeman",2);
