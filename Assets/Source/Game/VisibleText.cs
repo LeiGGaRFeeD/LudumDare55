@@ -15,7 +15,8 @@ public class VisibleText : MonoBehaviour
 
     [SerializeField] private GameObject[] _uiText;
     [SerializeField] private Text[] _symbols;
-    private string _forErr = "You already created it!";
+   // private string _forErr = "You already created it!";
+   [SerializeField] private string _SecondUse;
 
     private int a;
     // Start is called before the first frame update
@@ -39,10 +40,15 @@ public class VisibleText : MonoBehaviour
                 _uiText[i].SetActive(true);
                 a = i;
                 DeactivateAfterDelay();
-            }
-            else
+            } 
+            else if(PlayerPrefs.GetInt(_keys[i])== 1 && 
+                    PlayerPrefs.GetInt(_textForPersonsC[i]) == 2
+                    && PlayerPrefs.GetString("LastUse") == _keys[i])
             {
-            //    _uiText[i].SetActive((false));
+                _uiText[i].SetActive(true);
+                _uiText[i].GetComponent<Text>().text = _SecondUse.ToString();//"Already used";
+                a = i;
+                DeactivateAfterDelay();
             }
         }
     }
