@@ -6,6 +6,7 @@ using UnityEngine;
 public class DebugGame : MonoBehaviour
 {
     [SerializeField] private bool _debugIsOn;
+    [SerializeField] private string[] _textForPersonsC = { "SL", "TU", "SP", "BO", "OS", "NI", "FO", "JE", "DR", "GA" };
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,11 @@ public class DebugGame : MonoBehaviour
         PlayerPrefs.SetInt("Dragon",0);
         PlayerPrefs.SetInt("Garpy",0);
         Debug.Log(("Opened reseted!"));
+
+        for (int  i = 0;  i < _textForPersonsC.Length;  i++)
+        {
+            PlayerPrefs.SetInt(_textForPersonsC[i],0);
+        }
     }
     // Update is called once per frame
     void Update()
