@@ -30,6 +30,10 @@ public class SceneHelper : MonoBehaviour
     {
         SceneManager.LoadScene("Autores");
     }
+    public void GoToKrayk()
+    {
+        SceneManager.LoadScene("Krayk");
+    }
 
     public void quitFromGame()
     {
@@ -65,6 +69,11 @@ public class SceneHelper : MonoBehaviour
             {
                 Debug.Log(("Loading Autores"));
                 SceneManager.LoadScene("Autores");
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha6) == true)
+            {
+                Debug.Log(("Krayg scene"));
+                SceneManager.LoadScene("Krayk");
             }
             if (Input.GetKeyDown(KeyCode.Alpha0) == true)
             {
