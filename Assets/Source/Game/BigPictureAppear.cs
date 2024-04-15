@@ -23,11 +23,13 @@ public class BigPictureAppear : MonoBehaviour
             {
                 Debug.Log(("Activated big picture!"));
                 _bigIcons[i].SetActive(true);
+                _bigIcons[i+10].SetActive(true);
             }
             else if (_miniIcons[i].activeSelf == false)
             {
                 Debug.Log(("Deactivated big picture!"));
                 _bigIcons[i].SetActive(false);
+                _bigIcons[i+10].SetActive(false);
             }
         }
     }
