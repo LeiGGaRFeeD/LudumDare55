@@ -105,6 +105,10 @@ public class Game : MonoBehaviour
             Debug.Log("Garpy opened");
             SceneManager.LoadScene("MiniGame");
         }
+        else if (_name == "crystalcrystalcrystal"  )
+        {
+            SceneManager.LoadScene(("Krayk"));
+        }
         else
         {
             _boilerPic[1].SetActive(true);

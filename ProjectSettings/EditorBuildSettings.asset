@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Presentation/Scenes/MainMenu.unity
     guid: c2021addb2a8e4d1297b4322ad69cdc6
   - enabled: 1
-    path: Assets/Presentation/Scenes/TestScene.unity
+    path: Assets/Presentation/Scenes/Unused/TestScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Presentation/Scenes/Game.unity
@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Presentation/Scenes/MiniGame.unity
     guid: 52519d3a56aba423989c329b844276c3
+  - enabled: 1
+    path: Assets/Presentation/Scenes/Krayk.unity
+    guid: 08b945ff89f7d48b8a050dd26c5d1534
+  - enabled: 1
+    path: Assets/Presentation/Scenes/Autores.unity
+    guid: fbd50b72080934b1fb5a94182c3de268
   m_configObjects: {}
