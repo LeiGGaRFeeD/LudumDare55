@@ -215,7 +215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &64928712
 RectTransform:
   m_ObjectHideFlags: 0
@@ -232,8 +232,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -105.677086, y: 187.38997}
-  m_SizeDelta: {x: -1203.6743, y: -655.93}
+  m_AnchoredPosition: {x: -115.72372, y: 187.38997}
+  m_SizeDelta: {x: -1186.5576, y: -655.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &64928713
 MonoBehaviour:
@@ -268,7 +268,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dialogue text here
+  m_Text: '*The creature merrily performs a tentacle dance*'
 --- !u!222 &64928714
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -539,7 +539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &127247588
 RectTransform:
   m_ObjectHideFlags: 0
@@ -556,8 +556,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 193.79, y: 187.4}
-  m_SizeDelta: {x: -1213.9, y: -655.91}
+  m_AnchoredPosition: {x: 197.8831, y: 200.85}
+  m_SizeDelta: {x: -1205.7139, y: -682.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &127247589
 MonoBehaviour:
@@ -592,7 +592,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dialogue text here
+  m_Text: '*Rustling*'
 --- !u!222 &127247590
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -618,7 +618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &133000927
 RectTransform:
   m_ObjectHideFlags: 0
@@ -635,8 +635,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 92.653, y: 187.39}
-  m_SizeDelta: {x: -1212.5, y: -655.93}
+  m_AnchoredPosition: {x: 90.07603, y: 187.39}
+  m_SizeDelta: {x: -1162.6741, y: -655.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &133000928
 MonoBehaviour:
@@ -671,7 +671,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dialogue text here
+  m_Text: '*Ringing laughter filled the room.* Take care of me)'
 --- !u!222 &133000929
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1021,7 +1021,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &249471231
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1038,8 +1038,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.4799805, y: 187.39}
-  m_SizeDelta: {x: -1214.1, y: -655.93}
+  m_AnchoredPosition: {x: -16.4104, y: 187.39}
+  m_SizeDelta: {x: -1184.332, y: -655.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &249471232
 MonoBehaviour:
@@ -1074,7 +1074,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dialogue text here
+  m_Text: '*Your creature rustles its wings thoughtfully*'
 --- !u!222 &249471233
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2323,7 +2323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &700888548
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2376,7 +2376,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dialogue text here
+  m_Text: 'Pom! Pom! '
 --- !u!222 &700888550
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3093,7 +3093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &955690854
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3110,8 +3110,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 293.08, y: 187.39}
-  m_SizeDelta: {x: -1214.7, y: -655.93}
+  m_AnchoredPosition: {x: 298.2894, y: 187.39}
+  m_SizeDelta: {x: -1162.6061, y: -655.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &955690855
 MonoBehaviour:
@@ -3146,7 +3146,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dialogue text here
+  m_Text: '*Smoke enveloped the cauldron. After it dissipated, you saw shiny scales*'
 --- !u!222 &955690856
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3548,7 +3548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1049834644
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3565,8 +3565,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -408.35, y: 187.4}
-  m_SizeDelta: {x: -1213.8, y: -655.91}
+  m_AnchoredPosition: {x: -412.9, y: 199.21}
+  m_SizeDelta: {x: -1173.4, y: -679.5727}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1049834645
 MonoBehaviour:
@@ -3601,7 +3601,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dialogue text here
+  m_Text: Hello, Mmasssstter.
 --- !u!222 &1049834646
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3702,7 +3702,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1160881564
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3719,8 +3719,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -306.53, y: 187.4}
-  m_SizeDelta: {x: -1214, y: -655.91}
+  m_AnchoredPosition: {x: -303.91, y: 187.4}
+  m_SizeDelta: {x: -1168.6, y: -655.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1160881565
 MonoBehaviour:
@@ -3755,7 +3755,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dialogue text here
+  m_Text: '*Opening its eyes, the creature stuck out its tongue* I''m hungry'
 --- !u!222 &1160881566
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3931,7 +3931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1214619654
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3946,10 +3946,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 954625368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.07700001, y: 0}
+  m_AnchorMin: {x: 0.052, y: 0}
   m_AnchorMax: {x: 1, y: 0.7988334}
-  m_AnchoredPosition: {x: -557.35004, y: 259.81787}
-  m_SizeDelta: {x: -1113.9, y: -511.0705}
+  m_AnchoredPosition: {x: -557.1501, y: 271.13}
+  m_SizeDelta: {x: -1114.3, y: -542.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1214619655
 MonoBehaviour:
@@ -3984,7 +3984,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dialogue text here
+  m_Text: Blbullblyub!
 --- !u!222 &1214619656
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4085,7 +4085,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1418751304
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4102,8 +4102,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 400.1328, y: 184.01018}
-  m_SizeDelta: {x: -1203.5642, y: -649.1395}
+  m_AnchoredPosition: {x: 428.41235, y: 189.59167}
+  m_SizeDelta: {x: -1147.0051, y: -660.3026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1418751305
 MonoBehaviour:
@@ -4138,7 +4138,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dialogue text here
+  m_Text: '*The creature grunted and became suspicious*'
 --- !u!222 &1418751306
 CanvasRenderer:
   m_ObjectHideFlags: 0
