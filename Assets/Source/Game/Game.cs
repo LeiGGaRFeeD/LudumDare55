@@ -35,7 +35,7 @@ public class Game : MonoBehaviour
             SceneManager.LoadScene("MiniGame");
         }
         
-        else if (_name == "sparklescrystalfire" || _name == "sparklesfirecrystal" || _name == "firecrystalsparkles" || _name == "firesparklescrystal" || _name == "crystalfiresparkles" || _name == "crystalfiresparkles" )
+        else if (_name == "sparklescrystalfire" || _name == "sparklesfirecrystal" || _name == "firecrystalsparkles" || _name == "firesparklescrystal" || _name == "crystalsparklesfire" || _name == "crystalfiresparkles" )
         {
             PlayerPrefs.SetInt("Turtle",2);
             PlayerPrefs.SetString("LastUse", "Turtle");
