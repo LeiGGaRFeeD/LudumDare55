@@ -1955,7 +1955,7 @@ GameObject:
   - component: {fileID: 748314721}
   - component: {fileID: 748314720}
   m_Layer: 5
-  m_Name: i5_img (1)
+  m_Name: DownPlateForMonsters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1975,10 +1975,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 954625368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.49427083, y: 0.30651852}
-  m_AnchorMax: {x: 0.55, y: 0.45400003}
-  m_AnchoredPosition: {x: -126.23468, y: 538.4}
-  m_SizeDelta: {x: 1445.7019, y: -0.96}
+  m_AnchorMin: {x: 0.052, y: 0.7988334}
+  m_AnchorMax: {x: 0.87543756, y: 0.93000007}
+  m_AnchoredPosition: {x: 1.6970825, y: 9.799927}
+  m_SizeDelta: {x: 10.965698, y: 11.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &748314720
 MonoBehaviour:
@@ -2213,12 +2213,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3256,12 +3256,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -4274,10 +4274,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1034897168}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7005625, y: 0}
-  m_AnchorMax: {x: 1, y: 0.77300006}
-  m_AnchoredPosition: {x: -179, y: 21.071}
-  m_SizeDelta: {x: 300.9765, y: 42.141}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.85947263}
+  m_AnchoredPosition: {x: -7.3458557, y: 1.8521729}
+  m_SizeDelta: {x: -42.331802, y: 3.7033005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1885289643
 MonoBehaviour:
@@ -4798,12 +4798,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
