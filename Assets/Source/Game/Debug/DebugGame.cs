@@ -2,22 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class DebugGame : MonoBehaviour
 {
-    [SerializeField] private bool _debugIsOn;
+    [SerializeField] private GameObject _debugCanvas;
+    private bool _debugIsOn;
     [SerializeField] private string[] _textForPersonsC = { "SL", "TU", "SP", "BO", "OS", "NI", "FO", "JE", "DR", "GA" };
+
+    [SerializeField] private Text _nameDB;
     // Start is called before the first frame update
     void Start()
     {
-        if ( _debugIsOn == true)
+   /*     if ( _debugIsOn == true)
         {
             Debug.Log(("Debug is on"));
         }
         else
         {
             Debug.Log("Debug is off");
-        }
+        }*/
     }
 
     public void ResetOpened()
@@ -42,12 +45,31 @@ public class DebugGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if ( Input.GetKeyDown(KeyCode.UpArrow) == true)
+        {
+            _debugIsOn = true;
+        }
+        if ( Input.GetKeyDown(KeyCode.DownArrow) == true)
+        {
+            _debugIsOn = false;
+        }
+
+        
         if ( (_debugIsOn == true))
         {
+            _debugCanvas.SetActive(true);
             if ( Input.GetKeyDown((KeyCode.R))==true)
             {
                 ResetOpened();
             }
+            
+            
         }
+        else
+        {
+            _debugCanvas.SetActive(false);
+        }
+
+        _nameDB.text ="Name = "+ PlayerPrefs.GetString("nameSTR").ToString();
     }
 }

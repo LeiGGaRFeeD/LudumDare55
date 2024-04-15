@@ -550,6 +550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be133b5a49a314de7b5a9224a48abd47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  victorySound: {fileID: 8300000, guid: 78d5f0cb80a0f544bae673cd10c6f316, type: 3}
 --- !u!1 &548765881
 GameObject:
   m_ObjectHideFlags: 0

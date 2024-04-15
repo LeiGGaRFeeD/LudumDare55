@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
+    
     [SerializeField] private string _name;
     // Start is called before the first frame update
     [SerializeField] private GameObject[] _boilerPic;
@@ -167,5 +168,6 @@ public class Game : MonoBehaviour
     void Update()
     {
         Debug.Log(("name = "+_name));
+        PlayerPrefs.SetString("nameSTR",_name);
     }
 }

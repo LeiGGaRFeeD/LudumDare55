@@ -1,86 +1,66 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CorrectZone : MonoBehaviour
 {
+    public AudioClip victorySound; // Аудиоклип, который будет воспроизводиться при победе
+    private AudioSource audioSource; // Источник звука для воспроизведения аудиоклипа
+
     private bool _playerInside;
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Получаем компонент AudioSource или добавляем его, если он отсутствует
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        audioSource.playOnAwake = false; // Отключаем автоматическое воспроизведение
     }
-    
+
     public void CreaturesOpening()
     {
-        Debug.Log(("Creature opening is working"));
+        Debug.Log("Creature opening is working");
         if (_playerInside == true)
         {
-
-
-            if (PlayerPrefs.GetInt("Slimeman") == 2)
-            {
-                PlayerPrefs.SetInt("Slimeman", 1);
-                SceneManager.LoadScene("Game");
-            }
-
-            if (PlayerPrefs.GetInt("Turtle") == 2)
-            {
-                PlayerPrefs.SetInt("Turtle", 1);
-                SceneManager.LoadScene("Game");
-            }
-
-            if (PlayerPrefs.GetInt("Spider") == 2)
-            {
-                PlayerPrefs.SetInt("Spider", 1);
-                SceneManager.LoadScene("Game");
-            }
-
-            if (PlayerPrefs.GetInt("BoboCat") == 2)
-            {
-                PlayerPrefs.SetInt("BoboCat", 1);
-                SceneManager.LoadScene("Game");
-            }
-
-            if (PlayerPrefs.GetInt("OsmoCat") == 2)
-            {
-                PlayerPrefs.SetInt("OsmoCat", 1);
-                SceneManager.LoadScene("Game");
-            }
-
-            if (PlayerPrefs.GetInt("NightLamp") == 2)
-            {
-                PlayerPrefs.SetInt("NightLamp", 1);
-                SceneManager.LoadScene("Game");
-            }
-
-            if (PlayerPrefs.GetInt("Fox") == 2)
-            {
-                PlayerPrefs.SetInt("Fox", 1);
-                SceneManager.LoadScene("Game");
-            }
-
-            if (PlayerPrefs.GetInt("Jellyfish") == 2)
-            {
-                PlayerPrefs.SetInt("Jellyfish", 1);
-                SceneManager.LoadScene("Game");
-            }
-
-            if (PlayerPrefs.GetInt("Dragon") == 2)
-            {
-                PlayerPrefs.SetInt("Dragon", 1);
-                SceneManager.LoadScene("Game");
-            }
-
-            if (PlayerPrefs.GetInt("Garpy") == 2)
-            {
-                PlayerPrefs.SetInt("Garpy", 1);
-                SceneManager.LoadScene("Game");
-            }
+            // Проверяем состояние каждого существа и загружаем сцену с задержкой
+            CheckAndLoadSceneWithDelay("Slimeman", "Game");
+            CheckAndLoadSceneWithDelay("Turtle", "Game");
+            CheckAndLoadSceneWithDelay("Spider", "Game");
+            CheckAndLoadSceneWithDelay("BoboCat", "Game");
+            CheckAndLoadSceneWithDelay("OsmoCat", "Game");
+            CheckAndLoadSceneWithDelay("NightLamp", "Game");
+            CheckAndLoadSceneWithDelay("Fox", "Game");
+            CheckAndLoadSceneWithDelay("Jellyfish", "Game");
+            CheckAndLoadSceneWithDelay("Dragon", "Game");
+            CheckAndLoadSceneWithDelay("Garpy", "Game");
         }
+    }
+
+    private void CheckAndLoadSceneWithDelay(string creatureKey, string sceneName)
+    {
+        if (PlayerPrefs.GetInt(creatureKey) == 2)
+        {
+            PlayerPrefs.SetInt(creatureKey, 1);
+            PlayVictorySound(); // Воспроизводим звук победы
+            StartCoroutine(LoadSceneAfterDelay(sceneName));
+        }
+    }
+    private void PlayVictorySound()
+    {
+        if (victorySound != null)
+        {
+            audioSource.PlayOneShot(victorySound);
+        }
+    }
+
+    // Корутина для загрузки сцены с задержкой
+    private IEnumerator LoadSceneAfterDelay(string sceneName)
+    {
+        yield return new WaitForSeconds(1f); // Задержка в 1 секунду
+        SceneManager.LoadScene(sceneName);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -93,9 +73,8 @@ public class CorrectZone : MonoBehaviour
         _playerInside = false;
     }
     
-    
     void Update()
     {
-        Debug.Log(("Player inside = "+_playerInside));
+        Debug.Log("Player inside = " + _playerInside);
     }
 }

@@ -302,9 +302,9 @@ RectTransform:
   m_Father: {fileID: 1535640105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.16871879, y: 0.058444444}
-  m_AnchoredPosition: {x: -36.39026, y: -7.0875244}
-  m_SizeDelta: {x: -0.8930054, y: -0.16699982}
+  m_AnchorMax: {x: 0.16568752, y: 0.06383333}
+  m_AnchoredPosition: {x: 1.5534668, y: -2.083496}
+  m_SizeDelta: {x: 3.1069946, y: -4.167}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &399170154
 MonoBehaviour:
@@ -339,7 +339,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: InDev v0.2
+  m_Text: InDev v0.5.1
 --- !u!222 &399170155
 CanvasRenderer:
   m_ObjectHideFlags: 0
