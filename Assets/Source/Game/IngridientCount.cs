@@ -6,7 +6,7 @@ public class IngridientCount : MonoBehaviour
 {
     [SerializeField] private Text[] ingridients;
 
-    private int[] clicksCOunt;
+    [SerializeField]private int[] clicksCOunt = {0,0,0,0,0};
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class IngridientCount : MonoBehaviour
     {
         clicksCOunt[2]= clicksCOunt[2]+1;
     }
-    public void ClickI4()
+    public void ClickI4()  
     {
         clicksCOunt[3]= clicksCOunt[3]+1;
     }
