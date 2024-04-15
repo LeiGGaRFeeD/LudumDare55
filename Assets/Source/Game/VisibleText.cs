@@ -62,7 +62,7 @@ public class VisibleText : MonoBehaviour
     private IEnumerator DeactivateCoroutine()
     {
         // Ожидание 2 секунд.
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3.5f);
 
         // Деактивация объекта.
         for (int i = 0; i < _textForPersonsC.Length; i++)

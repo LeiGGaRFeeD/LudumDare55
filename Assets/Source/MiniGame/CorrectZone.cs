@@ -62,7 +62,7 @@ public class CorrectZone : MonoBehaviour
     // Корутина для загрузки сцены с задержкой
     private IEnumerator LoadSceneAfterDelay(string sceneName)
     {
-        yield return new WaitForSeconds(1f); // Задержка в 1 секунду
+        yield return new WaitForSeconds(0.8f); // Задержка в 1 секунду
         SceneManager.LoadScene(sceneName);
     }
 
