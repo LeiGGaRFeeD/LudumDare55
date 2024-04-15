@@ -489,7 +489,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: InDev v0.6.0
+  m_Text: InDev v0.7.0
 --- !u!222 &399170155
 CanvasRenderer:
   m_ObjectHideFlags: 0

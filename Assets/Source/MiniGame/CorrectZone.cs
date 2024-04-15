@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class CorrectZone : MonoBehaviour
 {
+    [SerializeField] private GameObject _sucsessText;
     public AudioClip victorySound; // Аудиоклип, который будет воспроизводиться при победе
     private AudioSource audioSource; // Источник звука для воспроизведения аудиоклипа
 
@@ -11,6 +12,7 @@ public class CorrectZone : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _sucsessText.SetActive(false);
         // Получаем компонент AudioSource или добавляем его, если он отсутствует
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
@@ -55,6 +57,7 @@ public class CorrectZone : MonoBehaviour
         if (victorySound != null)
         {
             MoveCube.speed = 0;
+            _sucsessText.SetActive(true);
             audioSource.PlayOneShot(victorySound);
         }
     }
