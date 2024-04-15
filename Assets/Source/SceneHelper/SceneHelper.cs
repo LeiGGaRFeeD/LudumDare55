@@ -14,31 +14,37 @@ public class SceneHelper : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        StartCoroutine(DelayedLoadScene("MainMenu", 1f));
     }
 
     public void GoToGame()
     {
-        SceneManager.LoadScene("Game");
+        StartCoroutine(DelayedLoadScene("Game", 1f));
     }
 
     public void GoToMiniGame()
     {
-        SceneManager.LoadScene("MiniGame");
+        StartCoroutine(DelayedLoadScene("MiniGame", 1f));
     }
     public void GoToAutores()
     {
-        SceneManager.LoadScene("Autores");
+        StartCoroutine(DelayedLoadScene("Autores", 1f));
     }
     public void GoToKrayk()
     {
-        SceneManager.LoadScene("Krayk");
+        StartCoroutine(DelayedLoadScene("Krayk", 1f));
     }
+
 
     public void quitFromGame()
     {
         Debug.Log(("quit from application"));
         Application.Quit();
+    }
+    private IEnumerator DelayedLoadScene(string sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName);
     }
     // Update is called once per frame
     void Update()
