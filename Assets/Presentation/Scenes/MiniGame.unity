@@ -236,7 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 723364545}
   pointB: {fileID: 1306549622}
-  speed: 5
+  _refSpeed: 5
   _randomIsActivated: 0
   min: 5
   max: 10

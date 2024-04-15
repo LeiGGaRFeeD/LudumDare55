@@ -91,7 +91,7 @@ public class Game : MonoBehaviour
             SceneManager.LoadScene("MiniGame");
         }
         
-        else if (_name == "firecrystalslurry" || _name == "firesslurrycrystal" || _name == "crystalfireslurry" || _name == "crystalslurryfire" || _name == "slurryfirecrystal" || _name == "slurrycrystalfire" )
+        else if (_name == "firecrystalslurry" || _name == "fireslurrycrystal" || _name == "crystalfireslurry" || _name == "crystalslurryfire" || _name == "slurryfirecrystal" || _name == "slurrycrystalfire" )
         {
             PlayerPrefs.SetInt("Dragon",2);
             PlayerPrefs.SetString("LastUse", "Dragon");

@@ -35,6 +35,7 @@ public class DebugGame : MonoBehaviour
         PlayerPrefs.SetInt("Jellyfish",0);
         PlayerPrefs.SetInt("Dragon",0);
         PlayerPrefs.SetInt("Garpy",0);
+        Time.timeScale = 1;
         Debug.Log(("Opened reseted!"));
 
         for (int  i = 0;  i < _textForPersonsC.Length;  i++)
@@ -54,6 +55,7 @@ public class DebugGame : MonoBehaviour
             _debugIsOn = false;
         }
 
+
         
         if ( (_debugIsOn == true))
         {
@@ -62,8 +64,15 @@ public class DebugGame : MonoBehaviour
             {
                 ResetOpened();
             }
-            
-            
+           
+            if ( Input.GetKeyDown(KeyCode.LeftArrow) == true)
+            {
+                Time.timeScale = 0;
+            }
+            if ( Input.GetKeyDown(KeyCode.RightArrow) == true)
+            {
+                Time.timeScale = 1;
+            }
         }
         else
         {

@@ -1,12 +1,16 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class MoveCube : MonoBehaviour
 {
     public Transform pointA; // Первая точка
     public Transform pointB; // Вторая точка
-    public float speed = 5.0f; // Скорость перемещения
+    public static float speed = 5.0f; // Скорость перемещения
+
+    [Header("Reference speed")] [SerializeField]
+    private float _refSpeed;
 
     [Header("Random settings")] [SerializeField]
     private bool _randomIsActivated;
@@ -20,13 +24,19 @@ public class MoveCube : MonoBehaviour
     {
         // Начинаем движение к точке A
         target = pointA;
-        if ( _randomIsActivated == true)
+        if (_randomIsActivated == true)
         {
             speed = Random.RandomRange(min, max);
-            
+        }
+        else
+        {
+            speed = _refSpeed;
         }
     }
-
+    public void OnTriggerExit2D(Collider2D other)
+    {
+     //   _playerInside = false;
+    }
     void Update()
     {
         // Перемещаем объект к текущей целевой точке

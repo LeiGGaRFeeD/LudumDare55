@@ -46,12 +46,15 @@ public class CorrectZone : MonoBehaviour
             PlayerPrefs.SetInt(creatureKey, 1);
             PlayVictorySound(); // Воспроизводим звук победы
             StartCoroutine(LoadSceneAfterDelay(sceneName));
+
+         //   Time.timeScale = 0;
         }
     }
     private void PlayVictorySound()
     {
         if (victorySound != null)
         {
+            MoveCube.speed = 0;
             audioSource.PlayOneShot(victorySound);
         }
     }
